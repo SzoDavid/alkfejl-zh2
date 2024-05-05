@@ -1,0 +1,4 @@
+--patch-module
+hu.alkfejl.core=_
+--add-reads
+hu.alkfejl.core=ALL-UNNAMED

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.Integer?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="480.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0"
+            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="hu.inf.szte.adventure.controller.SightListController">
+    <SplitPane dividerPositions="0.6616161616161617" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <TableView fx:id="tableView" prefHeight="398.0" prefWidth="393.0" AnchorPane.bottomAnchor="0.0"
+                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="209.0">
+            <Spinner fx:id="idSpinner" editable="true" layoutX="30.0" layoutY="82.0" prefHeight="26.0" prefWidth="227.0"
+                     AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="20.0">
+                <valueFactory>
+                    <SpinnerValueFactory.IntegerSpinnerValueFactory>
+                        <max>
+                            <Integer fx:constant="MAX_VALUE"/>
+                        </max>
+                    </SpinnerValueFactory.IntegerSpinnerValueFactory>
+                </valueFactory>
+                <tooltip>
+                    <Tooltip text="ID"/>
+                </tooltip>
+            </Spinner>
+            <TextField fx:id="nameTextField" layoutX="30.0" layoutY="82.0" prefHeight="26.0" prefWidth="227.0"
+                       promptText="Name of sight" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                       AnchorPane.topAnchor="60.0"/>
+            <Spinner fx:id="priceSpinner" editable="true" layoutX="30.0" layoutY="136.0" prefHeight="26.0"
+                     prefWidth="241.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                     AnchorPane.topAnchor="100.0">
+                <valueFactory>
+                    <SpinnerValueFactory.DoubleSpinnerValueFactory>
+                        <max>999.99</max>
+                    </SpinnerValueFactory.DoubleSpinnerValueFactory>
+                </valueFactory>
+                <tooltip>
+                    <Tooltip text="Price"/>
+                </tooltip>
+            </Spinner>
+            <Spinner fx:id="openingHourSpinner" editable="true" layoutX="30.0" layoutY="161.0" prefHeight="26.0"
+                     prefWidth="139.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                     AnchorPane.topAnchor="140.0">
+                <valueFactory>
+                    <SpinnerValueFactory.IntegerSpinnerValueFactory>
+                        <max>23</max>
+                        <wrapAround>true</wrapAround>
+                    </SpinnerValueFactory.IntegerSpinnerValueFactory>
+                </valueFactory>
+                <tooltip>
+                    <Tooltip text="Opening hour"/>
+                </tooltip>
+            </Spinner>
+            <Spinner fx:id="closingHourSpinner" editable="true" layoutX="30.0" layoutY="197.0" prefHeight="26.0"
+                     prefWidth="241.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                     AnchorPane.topAnchor="180.0">
+                <valueFactory>
+                    <SpinnerValueFactory.IntegerSpinnerValueFactory>
+                        <max>24</max>
+                        <wrapAround>true</wrapAround>
+                    </SpinnerValueFactory.IntegerSpinnerValueFactory>
+                </valueFactory>
+                <tooltip>
+                    <Tooltip text="Closing hour"/>
+                </tooltip>
+            </Spinner>
+            <TextArea fx:id="descriptionTextArea" layoutX="30.0" layoutY="280.0" prefHeight="120.0" prefWidth="241.0"
+                      promptText="Description ..." AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                      AnchorPane.topAnchor="220.0"/>
+            <Spinner fx:id="popularitySpinner" editable="true" layoutX="30.0" layoutY="345.0" prefHeight="26.0"
+                     prefWidth="241.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                     AnchorPane.topAnchor="360.0">
+                <valueFactory>
+                    <SpinnerValueFactory.IntegerSpinnerValueFactory>
+                        <max>10</max>
+                    </SpinnerValueFactory.IntegerSpinnerValueFactory>
+                </valueFactory>
+                <tooltip>
+                    <Tooltip text="Popularity"/>
+                </tooltip>
+            </Spinner>
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>

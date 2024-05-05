@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="265.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.inf.szte.adventure.controller.PreferenceController">
+    <Label alignment="CENTER" layoutX="83.0" layoutY="22.0" text="Preferences" textAlignment="CENTER"
+           AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="22.0">
+        <font>
+            <Font name="System Bold" size="20.0"/>
+        </font>
+    </Label>
+    <Slider fx:id="minPriceSlider" layoutX="22.0" layoutY="71.0" max="999.99" prefHeight="40.0" prefWidth="199.0"
+            showTickLabels="true" showTickMarks="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="130.0"
+            AnchorPane.topAnchor="80.0">
+        <tooltip>
+            <Tooltip text="Minimum price"/>
+        </tooltip>
+    </Slider>
+    <Slider fx:id="maxPriceSlider" layoutX="22.0" layoutY="125.0" max="999.99" prefHeight="40.0" prefWidth="199.0"
+            showTickLabels="true" showTickMarks="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="130.0"
+            AnchorPane.topAnchor="120.0">
+        <tooltip>
+            <Tooltip text="Maximum price"/>
+        </tooltip>
+    </Slider>
+    <Slider fx:id="minPopularitySlider" blockIncrement="1" layoutX="22.0" layoutY="176.0" majorTickUnit="1" max="10"
+            minorTickCount="0" prefHeight="40.0" prefWidth="199.0" showTickLabels="true" showTickMarks="true"
+            snapToTicks="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="160.0">
+        <tooltip>
+            <Tooltip text="Minimum popularity"/>
+        </tooltip>
+    </Slider>
+    <Spinner fx:id="minPriceSpinner" editable="true" layoutX="228.0" layoutY="80.0" prefHeight="26.0" prefWidth="94.0"
+             AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="80.0"/>
+    <Spinner fx:id="maxPriceSpinner" editable="true" layoutX="228.0" layoutY="120.0" prefHeight="26.0" prefWidth="94.0"
+             AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="120.0"/>
+    <Spinner fx:id="minPopularitySpinner" editable="true" layoutX="228.0" layoutY="160.0" prefHeight="26.0"
+             prefWidth="94.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="160.0"/>
+
+    <Button layoutX="139.0" layoutY="218.0" mnemonicParsing="false" onAction="#onApply" text="Apply"
+            AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0"/>
+    <Button layoutX="14.0" layoutY="219.0" mnemonicParsing="false" onAction="#onReset" text="Reset"
+            AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0"/>
+</AnchorPane>

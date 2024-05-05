@@ -1,0 +1,6 @@
+<configuration>
+    <logger name="com.zaxxer.hikari" level="ERROR" />
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

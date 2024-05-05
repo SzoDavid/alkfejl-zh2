@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="505.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.inf.szte.adventure.controller.MainController">
+    <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" onAction="#onCloseMenuItem" text="Close"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+            <Menu mnemonicParsing="false" text="Trip">
+                <MenuItem mnemonicParsing="false" onAction="#onAddNewTripMenuItem" text="Add new"/>
+                <MenuItem mnemonicParsing="false" onAction="#onListTripMenuItem" text="List records"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sight">
+                <MenuItem mnemonicParsing="false" onAction="#onAddNewSightMenuItem" text="Add new"/>
+                <MenuItem mnemonicParsing="false" onAction="#onListSightMenuItem" text="List records"/>
+            </Menu>
+            <MenuItem mnemonicParsing="false" onAction="#onPrefMenuItem" text="Preferences"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#onAboutMenuItem" text="About"/>
+        </Menu>
+    </MenuBar>
+    <AnchorPane fx:id="rootPane" layoutY="27.0" prefHeight="200.0" prefWidth="653.0" AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0"/>
+</AnchorPane>

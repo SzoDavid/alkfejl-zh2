@@ -1,0 +1,8 @@
+hu/alkfejl/dao/ZeneSQLiteImpl$Query.class
+module-info.class
+hu/alkfejl/utils/ConfigManager.class
+hu/alkfejl/dao/ZeneMemoryImpl.class
+hu/alkfejl/model/Zene.class
+hu/alkfejl/dao/ZeneSQLiteImpl.class
+hu/alkfejl/dao/ZeneDAO.class
+hu/alkfejl/controller/ZeneController.class
